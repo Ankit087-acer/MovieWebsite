@@ -1,70 +1,128 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 .container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/258d0f77-2241-4282-b613-8354a7675d1a/web/IN-en-20250721-TRIFECTA-perspective_cadc8408-df6e-4313-a05d-daa9dcac139f_large.jpg");
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/258d0f77-2241-4282-b613-8354a7675d1a/web/IN-en-20250721-TRIFECTA-perspective_cadc8408-df6e-4313-a05d-daa9dcac139f_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 .container::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6); 
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
-
 nav {
-    position: relative; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 1;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
 }
 
 .logo {
-    color: red;
-    font-size: 31px;
-    font-weight: bold;
-    border-radius: 5px;
+  color: red;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 #Language {
-    padding: 6px;
-    border-radius: 4px;
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .signout {
-    background-color: red;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .signout:hover {
-    background-color: rgb(200, 0, 0);
+  background-color: rgb(200, 0, 0);
 }
+
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+form input[type="email"] {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid rgba(18, 15, 15, 0.932);
+  filter: brightness(60%);
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+form input[type="submit"] {
+  padding: 12px 20px;
+  background-color: red;
+  color: white;
+  
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(200, 0, 0);
+}
+
+
+

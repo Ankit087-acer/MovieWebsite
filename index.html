@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-       <nav>
-        <h1 class="logo">NETFLIX</h1>
-        <ul>
-        <li><select name="Language" id="Language">
-                <option value="English">English</option>
-                <option value="Hindi">Hindi</option>
-            </select></li>
+  <div class="container">
+    <nav>
+      <h1 class="logo">NETFLIX</h1>
+      <ul>
         <li>
-            <button class="signout">Sign Out</button>
+          <select name="Language" id="Language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+          </select>
         </li>
-        </ul>
-       </nav>
+        <li>
+          <button class="signout">Sign Out</button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h2>Start at &#x20b9;149. Cancel anytime.</h2>
+      <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+
+      <form>
+        <input type="email" placeholder="Email address" required>
+        <input type="submit" value="Get Started >">
+      </form>
     </div>
+  </div>
 </body>
 </html>
