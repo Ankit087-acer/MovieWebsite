@@ -96,49 +96,52 @@ ul {
 
 
 form {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 20px;
 }
 
 form input[type="email"] {
-  padding: 12px;
-  width: 300px;
-  border: 1px solid rgba(18, 15, 15, 0.932);
-  filter: brightness(60%);
-  border-radius: 4px 0 0 4px;
-  outline: none;
+  padding: 16px;
+  width: 350px;
+  border: none;
+  border-radius: 6px 0 0 6px; 
+  font-size: 18px;
 }
 
 form input[type="submit"] {
-  padding: 12px 20px;
-  background-color: red;
+  padding: 0 32px;              
+  background-color: #e50914;     
   color: white;
-  
-  border: none;
+  font-size: 18px;
   font-weight: bold;
+  border: none;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
-  transition: background-color 0.3s ease;
+  border-radius: 0 6px 6px 0; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form input[type="submit"]:hover {
-  background-color: rgb(200, 0, 0);
+  background-color: #b20710;
+  transform: scale(1.05);
 }
+
 
 .trending-section {
   position: relative;
-  margin: 0;               
-  padding: 30px 20px;      
-  background-color: #141414; 
+  padding: 50px 30px;
+  background: linear-gradient(180deg, #141414, #000000); 
 }
 
 .Trending {
   color: white;
-  font-size: 24px;
-  margin-bottom: 20px;  
-  padding: 0 20px;      
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 4px solid #e50914; 
 }
-
-
 
 .card-container {
   display: grid;
@@ -214,6 +217,73 @@ form input[type="submit"]:hover {
 .card5 { 
     background-image: url("https://occ-0-3213-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSBGJoQ0k2B9-eb4IAfopMoQlulqXfsG5r2G0nM9CTAyEf5oWYOQ1GB9iAQ0exY95P6m9a3JuzTwiVTC_OfouvikM374cD5inVAKuLfUC994jSnXVThyUwsD6Wkv_NMDVVrh.jpg?r=fb9"); }
 
+.join {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 40px 20px 20px 20px;
+  border-left: 4px solid #e50914;
+  padding-left: 10px;
+}
 
+.container2 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+/* Default box style */
+.box {
+  color: #fff;
+  border-radius: 12px;
+  height: 300px;
+  width: 250px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  position: relative;
+}
 
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+}
+
+.box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #cccccc;
+}
+
+.box img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+}
+
+/* 🎨 Different gradients for each box */
+.box:nth-child(1) {
+  background: linear-gradient(135deg, #0f0f1a, #1a1033);
+}
+
+.box:nth-child(2) {
+  background: linear-gradient(135deg, #1a1033, #3a1c71);
+}
+
+.box:nth-child(3) {
+  background: linear-gradient(135deg, #16222a, #3a6073);
+}
+
+.box:nth-child(4) {
+  background: linear-gradient(135deg, #42275a, #734b6d);
+}
